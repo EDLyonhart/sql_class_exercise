@@ -21,15 +21,15 @@
 ###Questions
 Write down the following sql statements that are required to solve the following tasks.
 
-```    
-1. Show all the tables.
-2. Show all the users. 
-3. Show all the data in the owners table.
-4. Show the names of all owners. 
-5. Show the ages of all of the owners in ascending order. 
-6. Show the name of an owner whose name is Mary. 
-7. Show the age of all owners who are older than 30. 
-8. Show the name of all owners whose name starts with an E. 
+```
+1. Show all the tables                                                SELECT * FROM owner SELECT * FROM properties
+2. Show all the users 
+3. Show all the data in the owners table                              SELECT * FROM owners
+4. Show the names of all owners                                       SELECT names FROM owners
+5. Show the ages of all of the owners in ascending order.             SELECT ages FROM owners ASC
+6. Show the name of an owner whose name is Mary.                      SELECT mary FROM owners
+7. Show the age of all owners who are older than 30.                  SELECT * FROM owners WHERE age > 30
+8. Show the name of all owners whose name starts with an E.           SELECT * FROM owners WHERE name LIKE 'E%'
 9. Add an owner named John who is 33 years old to the owners table.
 10. Add an owner named Jane who is 43 years old to the owners table. 
 11. Change Jane's age to 30. 
